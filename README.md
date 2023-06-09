@@ -1,2 +1,1 @@
-# Hidden-Markov-Model
- HMM パラメータ推定実験用 Pythonプログラム
+### **隠れマルコフモデル パラメータ推定実験 Python実装**

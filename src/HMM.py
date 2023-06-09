@@ -1,6 +1,4 @@
-# %%
 import numpy as np
-from enum import Enum
 
 """隠れマルコフモデル"""
 class HMM():
@@ -84,4 +82,3 @@ if __name__ == '__main__':
     hmm.forward_algorithm()
     hmm.backward_algorithm()
     hmm.calc_prob()
-# %%
