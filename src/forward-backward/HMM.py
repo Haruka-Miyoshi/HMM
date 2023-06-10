@@ -1,3 +1,4 @@
+# %%
 import numpy as np
 
 """隠れマルコフモデル"""
@@ -72,13 +73,14 @@ class HMM():
         print(f"\n各時刻tにおける状態st:{state}")
 
 if __name__ == '__main__':
-    A:list=np.loadtxt('./data/A.txt')
-    B:list=np.loadtxt('./data/B.txt')
-    row:list=np.loadtxt('./data/row.txt')
-    data:list=np.loadtxt('./data/data.txt')
+    A:list=np.loadtxt('../data/A.txt')
+    B:list=np.loadtxt('../data/B.txt')
+    row:list=np.loadtxt('../data/row.txt')
+    data:list=np.loadtxt('../data/data.txt')
     category:int=3
 
     hmm = HMM(A, B, row, data, category)
     hmm.forward_algorithm()
     hmm.backward_algorithm()
     hmm.calc_prob()
+# %%
